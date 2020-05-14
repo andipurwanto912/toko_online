@@ -26,6 +26,7 @@ class BookController extends Controller
     public function create()
     {
         //
+        return view('books.create');
     }
 
     /**
@@ -58,9 +59,9 @@ class BookController extends Controller
         $new_book->categories()->attach($request->get('categories'));
 
         if($request->get('save_action') == 'PUBLISH'){
-        return redirect()->route('books.create')->with('status', 'Book successfully saved and published');
+        return redirect()->route('books.index')->with('status', 'Book successfully saved and published');
         } else {
-        return redirect()->route('books.create')->with('status', 'Book saved as draft');
+        return redirect()->route('books.index')->with('status', 'Book saved as draft');
         }
     }
 

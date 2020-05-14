@@ -5,7 +5,7 @@
 <script>
     $('#categories').select2({
         ajax: {
-            url: 'http://larashop.test/ajax/categories/search',
+            url: 'http://localhost/toko_online/ajax/categories/search',
             processResults: function (data) {
                 return {
                     results: data.map(function (item) {

@@ -3,7 +3,7 @@
 @section('content')
 
 <h2>List Books</h2>
-<hr class="my-3">
+    <hr class="my-3">
 
 <div class="row">
     <div class="col-md-12">
@@ -30,7 +30,7 @@
                 <tr>
                     <td>
                         @if($book->cover)
-                        <img src="{{asset('puplic/storage/' . $book->cover)}}" width="96px" />
+                        <img src="{{asset('public/storage/' . $book->cover)}}" width="76px" />
                         @endif
                     </td>
                     <td>{{$book->title}}</td>
@@ -53,7 +53,7 @@
                     <td>{{$book->stock}}</td>
                     <td>{{$book->price}}</td>
                     <td>
-                            <a href="{{route('books.edit', [$book->id])}}" class="btn btn-info btn-sm"> Edit </a>
+                    <a href="{{route('books.edit', [$book->id])}}" class="btn btn-info btn-sm"> Edit </a>
                     </td>
                 </tr>
                 @endforeach
