@@ -1,17 +1,8 @@
 @extends('layouts.global')
 @section('title') Books list @endsection
 @section('content')
-
-<h2>List Books</h2>
-    <hr class="my-3">
-
 <div class="row">
     <div class="col-md-12">
-        <div class="row mb-3">
-            <div class="col-md-12 text-right">
-                <a href="{{route('books.create')}}" class="btn btn-primary">Create book</a>
-            </div>
-        </div>
         <table class="table table-bordered table-stripped">
             <thead>
                 <tr>
@@ -30,7 +21,7 @@
                 <tr>
                     <td>
                         @if($book->cover)
-                        <img src="{{asset('public/storage/' . $book->cover)}}" width="76px" />
+                        <img src="{{asset('public/storage/' . $book->cover)}}" width="96px" />
                         @endif
                     </td>
                     <td>{{$book->title}}</td>
@@ -53,7 +44,7 @@
                     <td>{{$book->stock}}</td>
                     <td>{{$book->price}}</td>
                     <td>
-                    <a href="{{route('books.edit', [$book->id])}}" class="btn btn-info btn-sm"> Edit </a>
+                        <a href="{{route('books.edit', [$book->id])}}" class="btn btn-info btn-sm"> Edit </a>
                     </td>
                 </tr>
                 @endforeach
