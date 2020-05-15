@@ -52,7 +52,7 @@
 
             <button class="btn btn-primary" name="save_action" value="PUBLISH">Publish</button>
             <button class="btn btn-secondary" name="save_action" value="DRAFT">Save as draft</button>
-            <a href="{{route('categories.index')}}" class="btn btn-danger btn-sm">Back</a>
+            <a href="{{route('books.index')}}" class="btn btn-danger btn-sm">Back</a>
         </form>
     </div>
 </div>

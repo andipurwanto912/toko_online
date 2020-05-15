@@ -65,7 +65,7 @@
             </select>
             <br>
             <button class="btn btn-primary btn-sm" value="PUBLISH">Update</button>
-            <a href="{{route('categories.index')}}" class="btn btn-danger btn-sm">Back</a>
+            <a href="{{route('books.index')}}" class="btn btn-danger btn-sm">Back</a>
 
         </form>
     </div>

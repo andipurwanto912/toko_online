@@ -105,7 +105,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colSpan="10">
+                    <td colspan="10">
                         {{$categories->appends(Request::all())->links()}}
                     </td>
                 </tr>
