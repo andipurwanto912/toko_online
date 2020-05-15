@@ -3,6 +3,8 @@
 @section('content')
 <div class="row">
     <div class="col-md-12">
+        <h2>Trash Books</h2>
+        <hr class="my-3">
         @if(session('status'))
         <div class="alert alert-success">
             {{session('status')}}

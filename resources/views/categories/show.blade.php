@@ -3,7 +3,7 @@
 @section('content')
 <div class="col-md-8">
 
-    <h2>Edit Categories</h2>
+    <h2>Detail Categories</h2>
     <hr class="my-3">
 
     <div class="card">

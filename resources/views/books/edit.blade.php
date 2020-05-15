@@ -3,6 +3,10 @@
 @section('content')
 <div class="row">
     <div class="col-md-8">
+
+        <h2>Edit Books</h2>
+        <hr class="my-3">
+
         @if(session('status'))
         <div class="alert alert-success">
             {{session('status')}}
