@@ -61,7 +61,7 @@
                 <tr>
                     <td>
                         @if($book->cover)
-                        <img src="{{asset('storage/' . $book->cover)}}" width="96px" />
+                        <img src="{{asset('public/storage/' . $book->cover)}}" width="96px" />
                         @endif
                     </td>
                     <td>{{$book->title}}</td>
@@ -78,7 +78,7 @@
                     <td>
                         <form method="POST" action="{{route('books.restore', [$book->id])}}" class="d-inline">
                             @csrf
-                            <input type="submit" value="Restore" class="btn btn-success" />
+                            <input type="submit" value="Restore" class="btn btn-success btn-sm" />
                         </form>
                         <form method="POST" action="{{route('books.delete-permanent', [$book->id])}}" class="d-inline" onsubmit="return confirm('Delete this book permanently?')">
                             @csrf
